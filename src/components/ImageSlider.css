@@ -1,0 +1,38 @@
+/* ImageSlider.css */
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* Background color to avoid empty look */
+    padding: 20px 0;
+  }
+  
+  .slider-content {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%; /* Ensure the width covers the entire slider container */
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .slide p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  

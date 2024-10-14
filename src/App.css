@@ -1,3 +1,22 @@
+/* Import Playfair Display from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Optional: Set a background color for the entire page */
+}
+
+/* Ensure all elements inherit the font-family */
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +54,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Add this at the end of your App.css file */
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: adds a slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the entire App */
+.App {
+  animation: fadeIn 1.5s ease-in-out; /* 1.5s duration, ease-in-out timing function */
+}
+
+/* Add this CSS to your existing stylesheet (e.g., App.css or FeaturedArtists.css) */
+
+.artist-card {
+  background-color: #660808; /* Replace this with the hex color code of your maroon color */
+  color: white; /* You might want to ensure the text remains readable */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.artist-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.artist-card img {
+  border-radius: 5px; /* Slight rounding of images */
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.artist-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #FFD700; /* Optional: Gold color for titles */
+}
+
+.artist-card p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.artist-card a {
+  color: #FFD700; /* Optional: Gold color for links */
+  text-decoration: none;
+}
+
+.artist-card a:hover {
+  text-decoration: underline;
 }

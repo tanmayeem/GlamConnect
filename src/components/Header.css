@@ -1,0 +1,87 @@
+.header {
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding around the header content */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo, nav, and buttons */
+    align-items: center; /* Vertical alignment centered */
+}
+
+.header-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; /* Slightly larger font for logo */
+    color: white;
+    text-decoration: none;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows nav to take up space between logo and buttons */
+    justify-content: center; /* Centers the navigation links */
+}
+
+.nav-link {
+    color: white;
+    margin-right: 20px; /* Space between each nav link */
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* Removes right margin from the last nav link */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Underline effect on hover */
+    color: #d4af37; /* Adds a gold tint on hover for a luxurious feel */
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    background-color: #c00000; /* Red background */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Padding to create a box-like button */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: 'Playfair Display', serif; /* Consistent font */
+    font-size: 1rem; /* Adjusted font size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition on hover */
+    margin-left: 10px; /* Space between the buttons */
+    text-decoration: none; /* Remove underline */
+}
+
+.header-button:first-child {
+    margin-left: 0; /* Removes margin from the first button */
+}
+
+.header-button:hover {
+    background-color: #a00000; /* Slightly darker red on hover */
+    color: #d4af37; /* Gold text on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start;
+    }
+    
+    .header-nav {
+        justify-content: flex-start; /* Align nav links to the left */
+        margin-top: 10px; /* Add space between nav and logo */
+    }
+
+    .header-buttons {
+        margin-top: 10px; /* Add space between nav links and buttons */
+    }
+}

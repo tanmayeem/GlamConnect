@@ -1,0 +1,128 @@
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 10px; /* Adjusted margin for alignment */
+    min-width: 120px;
+    text-align: center;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-section a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+  }
+  
+  /* Social Media Links */
+  .footer-section.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Newsletter Section */
+  .newsletter-container {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: -15px;
+  }
+  
+  .newsletter-container h3 {
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+  }
+  
+  .newsletter-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter-container input[type="email"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .newsletter-container button[type="submit"] {
+    padding: 8px 15px;
+    background-color: #d4af37;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+  }
+  
+  .newsletter-container button[type="submit"]:hover {
+    background-color: #b89631;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 0.8em;
+    padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #5351518b;
+    color: #fff; /* Changed text color to white */
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+  }
+  
+  .back-to-top:hover {
+    background-color: #333;
+  }
+  
